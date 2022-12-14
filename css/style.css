@@ -282,7 +282,7 @@ nav {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .programs li a img {
   width: 188px;
@@ -467,10 +467,9 @@ footer {
   }
   .programs li {
     width: 25%;
-    padding: 12px;
+    padding: 12px 12px;
     box-sizing: border-box;
     height: auto;
-    margin-bottom: 8;
   }
   .program li a img {
     width: 100%;
