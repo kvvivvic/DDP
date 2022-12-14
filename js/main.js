@@ -30,8 +30,8 @@ $(document).ready(function () {
 
 $(".menu").click(function () {
   if ($(".all_menu").is(":visible")) {
-    $(".all_menu").hide();
+    $(".all_menu").fadeOut();
   } else {
-    $(".all_menu").show();
+    $(".all_menu").fadeIn();
   }
 });

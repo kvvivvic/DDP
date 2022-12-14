@@ -8,6 +8,9 @@ a {
 .hide {
   display: none;
 }
+.btn {
+  cursor: pointer;
+}
 .wrap {
   width: 100%;
 }
@@ -46,6 +49,7 @@ nav {
   position: relative;
   padding: 8px 6px;
   z-index: 10000;
+  cursor: pointer;
 }
 .menu:hover {
   transform: scale(1.3);
@@ -123,6 +127,7 @@ nav {
   position: fixed;
   display: none;
 }
+
 .all_menu_wrap {
   max-width: 1200px;
   margin: 0 auto;
@@ -277,12 +282,14 @@ nav {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .programs li a img {
   width: 188px;
   height: 160px;
-  padding: 24px 0px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  margin: 24px 0;
 }
 .program1 {
 }
