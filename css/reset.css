@@ -102,6 +102,7 @@ section {
 }
 body {
   line-height: 1;
+  font-family: "Playfair Display", "Noto Sans KR", serif, sans-serif;
 }
 ol,
 ul {
@@ -124,4 +125,19 @@ table {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.hide {
+  display: none;
+}
+.btn {
+  cursor: pointer;
+}
+.wrap {
+  width: 100%;
+}
+.active {
+  display: block;
 }
