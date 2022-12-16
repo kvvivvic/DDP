@@ -1,5 +1,8 @@
 body {
   font-family: "Playfair Display", "Noto Sans KR", serif, sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 a {
   cursor: pointer;
@@ -93,6 +96,7 @@ main {
 .main_cont {
   width: 100%;
   height: 640px;
+  margin: 0 auto;
   background: url(../images/main_background.jpg);
   background-size: cover;
   display: flex;
@@ -570,9 +574,10 @@ footer {
 @media screen and (max-width: 768px) {
   .all_menu {
     overflow-y: scroll;
+    overflow-x: hidden;
   }
   .all_menu_wrap {
-    max-width: 1200px;
+    max-width: 768px;
     margin: 0 auto;
     height: 100%;
   }
