@@ -1,15 +1,26 @@
 //More btn
 $(document).ready(function () {
-  $(".programs>li").hide();
-  $(".programs>li").slice(0, 10).show();
+  $(".more").click(function () {
+    if ($(".hide").is(":visible")) {
+      $(".hide").slideUp();
+    } else {
+      $(".hide").slideDown();
+    }
+  });
 });
-function more() {
-  $(".programs>li").slice(0, 20).show();
-}
 
 //메뉴버튼 애니메이션
 $(".menu").click(function () {
   $(this).toggleClass("active");
+});
+
+//메뉴버튼 누르면 전체메뉴 Fade
+$(".menu").click(function () {
+  if ($(".all_menu").is(":visible")) {
+    $(".all_menu").fadeOut();
+  } else {
+    $(".all_menu").fadeIn();
+  }
 });
 
 //3depth 메뉴
@@ -28,10 +39,18 @@ $(document).ready(function () {
   });
 });
 
-$(".menu").click(function () {
-  if ($(".all_menu").is(":visible")) {
-    $(".all_menu").fadeOut();
+//반응형 메뉴갯수 보이기
+$(window).on("load", function () {
+  if (window.innerWidth <= 1024) {
+    $(".tablet").addClass("hide");
   } else {
-    $(".all_menu").fadeIn();
+    $(".tablet").removeClass("hide");
+  }
+});
+$(window).on("resize", function () {
+  if (window.innerWidth <= 1024) {
+    $(".tablet").addClass("hide");
+  } else {
+    $(".tablet").removeClass("hide");
   }
 });
