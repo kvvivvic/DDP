@@ -8,6 +8,9 @@ a {
   cursor: pointer;
   color: inherit;
 }
+h2 {
+  font-family: "Playfair Display";
+}
 .hide {
   display: none;
 }

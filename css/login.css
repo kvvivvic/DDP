@@ -7,8 +7,7 @@ main > h2 {
 .login_box {
   width: 480px;
   height: 480px;
-  background-color: #999;
-  margin: 0 auto;
+  margin: 0 auto 72px;
 }
 strong {
   display: block;
@@ -27,8 +26,8 @@ input {
   box-sizing: border-box;
   padding-left: 24px;
   margin-left: 24px;
-  border: none;
-  border-radius: 2px;
+  border: 1px solid #000;
+  border-radius: 6px;
   font-size: 18px;
 }
 input::placeholder {
@@ -36,4 +35,66 @@ input::placeholder {
 }
 input:focus {
   outline: 1px solid royalblue;
+}
+button {
+  width: 456px;
+  height: 48px;
+  border-radius: 6px;
+  border: 1px solid #000;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 24px;
+}
+.btn_wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 48px;
+}
+.login_btn {
+  margin-bottom: 12px;
+}
+button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  input,
+  button {
+    width: 246px;
+  }
+  input {
+    margin: 0;
+  }
+  label {
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  strong {
+    padding: 0;
+    margin-bottom: 24px;
+  }
+  button {
+    margin-left: 0;
+  }
+  .pwd {
+    margin-top: 24px;
+  }
+  main > h2 {
+    font-size: 36px !important;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 768px;
+    padding: 72px 0 72px;
+  }
+  .main_cont {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
 }
