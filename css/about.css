@@ -49,7 +49,9 @@
 .kr {
   margin-bottom: 32px;
 }
-
+footer {
+  border: none;
+}
 @media screen and (max-width: 610px) {
   .box {
     width: 480px;
