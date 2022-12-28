@@ -4,15 +4,15 @@ main > h2 {
   text-align: center;
   padding: 72px;
 }
-.login_box {
-  width: 480px;
-  height: 480px;
+.signup_box {
+  width: 360px;
+  height: auto;
   margin: 0 auto 72px;
 }
 strong {
   display: block;
-  font-size: 24px;
-  padding: 24px 0 24px 24px;
+  font-size: 16px;
+  padding: 24px 0 8px 24px;
   box-sizing: border-box;
   font-weight: 400;
 }
@@ -21,7 +21,7 @@ label {
   flex-direction: column;
 }
 input {
-  width: 456px;
+  width: 340px;
   height: 48px;
   box-sizing: border-box;
   padding-left: 24px;
@@ -46,19 +46,20 @@ button {
 .btn_wrap {
   display: flex;
   align-items: center;
-  width: 480px;
   margin-top: 48px;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.login_btn {
+.sign_btn {
   background-color: #137cf4;
   color: #fff;
   font-weight: bold;
+  width: 146px;
 }
-.sign_btn {
+.login_btn {
   background-color: #000;
   color: #fff;
   font-weight: bold;
+  width: 146px;
 }
 .find_wrap {
   width: 100%;
