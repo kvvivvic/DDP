@@ -10,10 +10,10 @@ const aFilesToCache = [
 
 // 서비스워커 실행 & 캐시파일 저장
 self.addEventListener("install", (pEvent) => {
-  console.log("서비스 워커 실치 완료!");
+  // console.log("서비스 워커 실치 완료!");
   pEvent.waitUntil(
     caches.open(sCacheName).then((pCache) => {
-      console.log("캐시에 파일 저장 완료!");
+      // console.log("캐시에 파일 저장 완료!");
       return pCache.addAll(aFilesToCache);
     })
   );
@@ -21,7 +21,7 @@ self.addEventListener("install", (pEvent) => {
 
 // 고유 번호 할당받은 서비스 워커 동작 시작
 self.addEventListener("activate", (pEvent) => {
-  console.log("서비스워커 동작 시작됨!");
+  // console.log("서비스워커 동작 시작됨!");
 });
 
 // 고유 번호를 할당 받은 서비스워커 작동
