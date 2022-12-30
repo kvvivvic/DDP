@@ -40,99 +40,21 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
     <!-- Main Js -->
-    <script defer src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
     <script defer src="../js/index_text.js"></script>
+
+    <!-- header, footer -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#header").load("../html/header.html"); // 원하는 파일 경로를 삽입하면 된다
+        $("#footer").load("../html/footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+      });
+    </script>
     <title>DDP</title>
   </head>
   <body>
     <div class="wrap">
-      <header>
-        <div class="all_menu">
-          <div class="all_menu_wrap">
-            <ul class="depth1">
-              <li>
-                <h2>DDP 안내</h2>
-                <ul class="depth2">
-                  <li><a href="../html/about.html">DDP 소개</a></li>
-                  <li class="depth3_btn">
-                    <span>DDP 소식</span>
-                    <span class="material-symbols-outlined btn"> arrow_drop_down </span>
-                    <ul class="depth3 hide">
-                      <li><a href="#">공지사항</a></li>
-                      <li><a href="#">이벤트</a></li>
-                      <li><a href="#">갤러리</a></li>
-                      <li><a href="#">보도자료</a></li>
-                      <li><a href="#">뉴스레터</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">오시는 길</a></li>
-                  <li><a href="../html/zone.html">주요 관광시설</a></li>
-                  <li><a href="#">길 안내 서비스</a></li>
-                  <li><a href="#">DDP 멤버쉽</a></li>
-                </ul>
-              </li>
-              <li>
-                <h2>프로그램</h2>
-                <ul class="depth2">
-                  <li><a href="#">전체 일정 보기</a></li>
-                  <li><a href="#">전시</a></li>
-                  <li><a href="#">행사</a></li>
-                  <li><a href="#">키즈</a></li>
-                  <li><a href="#">상설</a></li>
-                </ul>
-              </li>
-              <li>
-                <h2>공간안내</h2>
-                <ul class="depth2">
-                  <li><a href="#">VR 지도</a></li>
-                  <li><a href="#">층별 지도</a></li>
-                  <li class="depth3_btn">
-                    <span>시설</span>
-                    <span class="material-symbols-outlined btn"> arrow_drop_down </span>
-                    <ul class="depth3 hide">
-                      <li><a href="#">전체시설안내</a></li>
-                      <li><a href="#">스페이스</a></li>
-                      <li><a href="#">키즈존(디키디키)</a></li>
-                      <li><a href="#">푸드(F&B)</a></li>
-                      <li><a href="#">스토어</a></li>
-                      <li><a href="#">안내센터</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">대관공간</a></li>
-                </ul>
-              </li>
-              <li>
-                <h2>고객지원</h2>
-                <ul class="depth2">
-                  <li><a href="#">자주묻는질문</a></li>
-                  <li><a href="#">고객문의</a></li>
-                  <li><a href="#">이용약관</a></li>
-                  <li><a href="#">행정서비스 현장</a></li>
-                  <li><a href="#">안전보건경영</a></li>
-                  <li><a href="#">사이트맵</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <nav>
-          <h1>
-            <a href="../index.html"><img class="logo" src="../images/logo.png" alt="" /></a>
-          </h1>
-
-          <div class="user_menu">
-            <a href="#"><span class="material-symbols-outlined search"> search </span></a>
-            <a href="../html/login.html"><span class="material-symbols-outlined person"> person </span></a>
-            <a href="../html/map.html"><span class="material-symbols-outlined map"> location_on </span></a>
-            <div class="menu hamberger">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <header id="header"></header>
       <main>
         <div class="box">
           <h2>회원가입이 완료 되었습니다!</h2>
@@ -142,36 +64,7 @@
           </div>
         </div>
       </main>
-      <footer>
-        <div class="footer_inner">
-          <div class="apply">
-            <span><a href="#">개인정보 처리방침</a></span>
-            <span>ㅣ</span>
-            <span><a href="#">고객지원</a></span>
-            <span>ㅣ</span>
-            <span><a href="#">사이트맵</a></span>
-          </div>
-          <div class="footer_cont">
-            <h2>
-              <a href="#"><img src="../images/footer_logo (1).png" alt="" /></a>
-            </h2>
-            <div class="info">
-              <address>[04566] 서울시 중구 을지로 281</address>
-              <p>대표이사 : 이경돈</p>
-              <p>대표전화 02)2153-0000</p>
-              <p>사업자번호 : 201-82-08464</p>
-            </div>
-            <div class="sns">
-              <a href="#"><img src="../images/icon-footer-sns-facebook.svg" alt="" /></a>
-              <a href="#"><img src="../images/icon-footer-sns-instagram.svg" alt="" /></a>
-              <a href="#"><img src="../images/icon-footer-sns-naverblog.svg" alt="" /></a>
-            </div>
-          </div>
-          <div class="copyright">
-            <p>COPYRIGHT ⓒ 2021 DDP. ALL RIGHTS RESERVED.</p>
-          </div>
-        </div>
-      </footer>
+      <footer id="footer"></footer>
     </div>
   </body>
 </html>

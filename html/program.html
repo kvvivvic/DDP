@@ -31,10 +31,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/header_footer.css" />
-    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/sign.css" />
 
     <!-- Jquary -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Text ani -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Js -->
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/index_text.js"></script>
 
     <!-- header, footer -->
     <script type="text/javascript">
@@ -43,40 +50,10 @@
         $("#footer").load("../html/footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
       });
     </script>
-    <!-- Main Js -->
-    <script defer src="../js/main.js"></script>
     <title>DDP</title>
   </head>
   <body>
-    <div class="wrap">
-      <header id="header"></header>
-      <main>
-        <div class="main_wrap">
-          <div class="bg">
-            <div class="box">
-              <div class="box_inner">
-                <h2>About us</h2>
-                <div class="kr">
-                  <p>DDP는 대한민국 서울특별시 동대문역사문화공원역에 위치한 복합 문화 공간입니다.</p>
-                  <p>2014년 3월 21일 개관한 이래 DDP에서는 각종 전시, 패션쇼, 신제품발표회, 포럼, 컨퍼런스 등 다양한 문화 행사가 진행되어 왔습니다.</p>
-                  <p>DDP는 디자인 트렌드가 시작되고 문화가 교류하는 장소입니다. 세계 최초 신제품과 패션 트렌드를 알리고, 새로운 전시를 통해 지식을 공유하며, 다양한 디자인 체험이 가능한 콘텐츠로 운영됩니다.</p>
-                  <p>이러한 활동을 통해 DDP는 아시아로, 세계로 향하는 ‘디자인·패션산업의 발신지’의 역할을 할 것입니다.</p>
-                </div>
-                <div class="en">
-                  <p>DDP is a complex cultural space located at Dongdaemun History and Culture Park Station in Seoul, Korea.</p>
-                  <p>Since its opening on March 21, 2014, DDP has hosted various cultural events such as various exhibitions, fashion shows, new product presentations, forums, and conferences.</p>
-                  <p>
-                    DDP is a place where design trends start and cultures exchange. It is the first in the world to publicize new products and fashion trends, share knowledge through new exhibitions, and operate as content that enables various design
-                    experiences.
-                  </p>
-                  <p>Through these activities, DDP will play the role of a 'place of origin for the design and fashion industry' to Asia and the world.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer id="footer"></footer>
-    </div>
+    <div id="header"></div>
+    <div id="footer"></div>
   </body>
 </html>

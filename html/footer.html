@@ -2,13 +2,17 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <!-- 매니페스트 파일 연결, 테마색상 변경 -->
+    <link rel="manifest" href="../manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- 뷰포트, 파비콘 설정-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="../images/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../mages/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../mages/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
     <!-- 스플래시 이미지 -->
     <link href="../images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
     <link href="../images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
@@ -28,55 +32,53 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/header_footer.css" />
-    <link rel="stylesheet" href="../css/about.css" />
-
     <!-- Jquary -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <!-- header, footer -->
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#header").load("../html/header.html"); // 원하는 파일 경로를 삽입하면 된다
-        $("#footer").load("../html/footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
-      });
-    </script>
+    <!-- Text ani -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <!-- Main Js -->
-    <script defer src="../js/main.js"></script>
+    <!-- <script defer src="../js/main.js"></script>
+    <script defer src="../js/index_text.js"></script> -->
     <title>DDP</title>
   </head>
   <body>
-    <div class="wrap">
-      <header id="header"></header>
-      <main>
-        <div class="main_wrap">
-          <div class="bg">
-            <div class="box">
-              <div class="box_inner">
-                <h2>About us</h2>
-                <div class="kr">
-                  <p>DDP는 대한민국 서울특별시 동대문역사문화공원역에 위치한 복합 문화 공간입니다.</p>
-                  <p>2014년 3월 21일 개관한 이래 DDP에서는 각종 전시, 패션쇼, 신제품발표회, 포럼, 컨퍼런스 등 다양한 문화 행사가 진행되어 왔습니다.</p>
-                  <p>DDP는 디자인 트렌드가 시작되고 문화가 교류하는 장소입니다. 세계 최초 신제품과 패션 트렌드를 알리고, 새로운 전시를 통해 지식을 공유하며, 다양한 디자인 체험이 가능한 콘텐츠로 운영됩니다.</p>
-                  <p>이러한 활동을 통해 DDP는 아시아로, 세계로 향하는 ‘디자인·패션산업의 발신지’의 역할을 할 것입니다.</p>
-                </div>
-                <div class="en">
-                  <p>DDP is a complex cultural space located at Dongdaemun History and Culture Park Station in Seoul, Korea.</p>
-                  <p>Since its opening on March 21, 2014, DDP has hosted various cultural events such as various exhibitions, fashion shows, new product presentations, forums, and conferences.</p>
-                  <p>
-                    DDP is a place where design trends start and cultures exchange. It is the first in the world to publicize new products and fashion trends, share knowledge through new exhibitions, and operate as content that enables various design
-                    experiences.
-                  </p>
-                  <p>Through these activities, DDP will play the role of a 'place of origin for the design and fashion industry' to Asia and the world.</p>
-                </div>
-              </div>
-            </div>
+    <footer id="footer">
+      <div class="footer_inner">
+        <div class="apply">
+          <span><a href="#">개인정보 처리방침</a></span>
+          <span>ㅣ</span>
+          <span><a href="#">고객지원</a></span>
+          <span>ㅣ</span>
+          <span><a href="#">사이트맵</a></span>
+        </div>
+        <div class="footer_cont">
+          <h2>
+            <a href="../index.html"><img src="../images/footer_logo (1).png" alt="" /></a>
+          </h2>
+          <div class="info">
+            <address>[04566] 서울시 중구 을지로 281</address>
+            <p>대표이사 : 이경돈</p>
+            <p>대표전화 02)2153-0000</p>
+            <p>사업자번호 : 201-82-08464</p>
+          </div>
+          <div class="sns">
+            <a href="#"><img src="../images/icon-footer-sns-facebook.svg" alt="" /></a>
+            <a href="#"><img src="../images/icon-footer-sns-instagram.svg" alt="" /></a>
+            <a href="#"><img src="../images/icon-footer-sns-naverblog.svg" alt="" /></a>
           </div>
         </div>
-      </main>
-      <footer id="footer"></footer>
-    </div>
+        <div class="copyright">
+          <p>COPYRIGHT ⓒ 2021 DDP. ALL RIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- 서비스 워커 등록 -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("../service_worker.js").then(function () {});
+      }
+    </script>
   </body>
 </html>
