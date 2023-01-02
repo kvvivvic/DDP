@@ -42,6 +42,7 @@
     <!-- Main Js -->
     <script defer src="../js/main.js"></script>
     <script defer src="../js/index_text.js"></script>
+    <script defer src="../js/login.js"></script>
 
     <!-- header, footer -->
     <script type="text/javascript">
@@ -65,16 +66,18 @@
                 <!-- 아이디 -->
                 <label>
                   <span><strong>아이디</strong></span>
+                  <span class="err_txt" id="err_id"></span>
                   <input type="text" class="input" id="id" name="id" />
                 </label>
                 <!-- 비밀번호 -->
                 <label>
                   <span class="pwd"><strong>비밀번호</strong></span>
+                  <span class="err_txt" id="err_pw"></span>
                   <input type="password" class="input" id="pw" name="pw" />
                 </label>
                 <!-- 버튼 -->
                 <div class="btn_wrap">
-                  <button class="login_btn"><a href="../html/login.html">로그인</a></button>
+                  <button class="login_btn" type="button" onclick="return form_check()"><a href="../html/login.html">로그인</a></button>
                   <button class="sign_btn"><a href="../html/sign.html">회원가입</a></button>
                 </div>
                 <!-- 비밀번호 재설정 -->
