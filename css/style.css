@@ -228,6 +228,11 @@ main {
   display: flex;
   padding: 0 24px;
 }
+.new_cont > a {
+  width: 100%;
+  display: flex;
+  padding: 0 24px;
+}
 .text_area {
   width: 50%;
   display: flex;
@@ -236,7 +241,7 @@ main {
   padding: 32px 0 0 28px;
 }
 .text_area h3 {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bold;
   color: #323232;
   margin-bottom: 48px;
@@ -505,6 +510,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
   .text_area {
     width: 100%;
     max-width: 727px;
@@ -680,7 +686,7 @@ footer {
     box-sizing: border-box;
   }
   .text_area h3 {
-    font-size: 36px;
+    font-size: 24px;
   }
   .text_area p {
     font-size: 16px;
@@ -712,8 +718,9 @@ footer {
   .text_area p {
     word-wrap: break-word;
     white-space: pre-wrap;
-    line-height: 36px;
+    line-height: 24px;
     text-align: center;
+    margin-bottom: 12px;
   }
   .runtime .open {
     font-size: 24px;
