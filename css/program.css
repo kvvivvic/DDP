@@ -81,7 +81,7 @@ img {
 .sub_tab > ul > li > a {
   font-size: 24px;
   color: #a6a6a6;
-  padding-bottom: 16 px;
+  padding-bottom: 16px;
 }
 .sub_tab > ul > li > a:hover {
   color: #000;
@@ -128,4 +128,21 @@ img {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
+}
+.pager {
+  width: 100%;
+  max-width: 1200px;
+  height: 103px;
+  display: flex;
+  justify-content: center;
+}
+.pager > span {
+  display: flex;
+  align-items: center;
+}
+.pager > span > a {
+  padding: 40px 24px;
+}
+.pager > span > a:hover {
+  color: cornflowerblue;
 }
