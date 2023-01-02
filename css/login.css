@@ -78,6 +78,9 @@ button {
   color: red;
   padding-left: 24px;
 }
+.login_btn > a {
+  width: 100%;
+}
 @media screen and (max-width: 768px) {
   input,
   button {
