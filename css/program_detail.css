@@ -21,6 +21,7 @@
 }
 .img_wrap > img {
   height: 100%;
+  width: 100%;
 }
 .txt_wrap {
   width: 50%;
@@ -104,7 +105,7 @@
 }
 .detail_inner > h2 {
   color: rgb(0, 117, 200) !important;
-  font-size: 30px !important;
+  font-size: 30px;
   line-height: 1.6 !important;
   font-weight: bold !important;
   text-align: center;
@@ -148,4 +149,54 @@
   background-color: #212121;
   color: #fff;
   transition: 0.3s;
+}
+@media screen and (max-width: 1200px) {
+  .main_box {
+    max-width: 1024px;
+  }
+  .txt_title {
+    font-size: 20px;
+  }
+  .sub_txt {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .main_box {
+    max-width: 840px;
+  }
+  .sub_txt {
+    font-size: 14px;
+  }
+  .sub_txt > dl > dt {
+    width: 52px;
+  }
+  .sub_txt > dl > dd {
+    padding-left: 12px;
+  }
+  .detail_inner > h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .main_box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_box > .img_wrap {
+    width: 100%;
+  }
+  .txt_wrap {
+    width: 100%;
+  }
+  .sub_txt > dl > dt {
+    width: 75px;
+  }
+  .sub_box {
+    width: 80%;
+  }
 }
