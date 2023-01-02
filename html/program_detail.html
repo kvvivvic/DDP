@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- 뷰포트, 파비콘 설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../mages/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../mages/favicon-32x32.png" />
+    <!-- 스플래시 이미지 -->
+    <link href="../images/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="../images/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header_footer.css" />
+    <link rel="stylesheet" href="../css/program_detail.css" />
+
+    <!-- Jquary -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Text ani -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main Js -->
+    <script defer src="../js/main.js"></script>
+    <script defer src="../js/index_text.js"></script>
+
+    <!-- header, footer -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#header").load("../html/header.html"); // 원하는 파일 경로를 삽입하면 된다
+        $("#footer").load("../html/footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+      });
+    </script>
+    <title>DDP</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header"></header>
+      <main>
+        <div class="main_inner">
+          <div class="main_box_wrap">
+            <div class="main_box">
+              <div class="img_wrap">
+                <img src="../images/program_d1.jpeg" alt="" />
+              </div>
+              <div class="txt_wrap">
+                <p class="view">12312</p>
+                <h2 class="txt_title"><우주 백패킹> 2022 서울라이트 차세대 미디어아티스트 전시</h2>
+                <div class="sub_txt">
+                  <dl>
+                    <dt>일정</dt>
+                    <dd>2022-11-01 ~ 2023-01-29</dd>
+                  </dl>
+                  <dl>
+                    <dt>장소</dt>
+                    <dd>DDP 디자인랩 1층 미디어아트갤러리, 투명 미디어월</dd>
+                  </dl>
+                  <dl>
+                    <dt>시간</dt>
+                    <dd>10:00 ~ 20:00 연중무휴</dd>
+                  </dl>
+                  <dl>
+                    <dt>관람비용</dt>
+                    <dd>무료관람</dd>
+                  </dl>
+                  <dl>
+                    <dt>관련자료</dt>
+                    <dd></dd>
+                  </dl>
+                </div>
+                <div class="btn">
+                  <a href="javascript:void(0)">
+                    <img src="../images/btn_scrap.png" alt="" />
+                  </a>
+                  <a href="javascript:void(0)">
+                    <img src="../images/btn_share.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sub_box">
+            <div class="detail">
+              <strong class="detail_ttl">개요</strong>
+            </div>
+            <div class="detail_inner">
+              <h2>우주적 삶을 준비하는 차세대 미디어아티스트의 ‘우주백패킹-Backpacking to the Universe’ 전시</h2>
+              <h3>- 2022 서울라이트 차세대 미디어아티스트 전시</h3>
+              <br />
+              <p><우주 백패킹(Backpacking to the Universe)> 전은 미래의 미디어아트를 선도해갈 차세대 아티스트 5팀의 작품을 DDP의 상설 미디어아트 플랫폼인 미디어아트갤러리와 투명 미디어월에서 개최합니다.</p>
+              <br />
+              <p>
+                초대형 미디어아트 프로젝트인 ‘서울라이트 DDP’ 겨울 행사를 앞두고, 우주적 삶을 준비하는 과정을 실험적으로 해석한 작품들은 ‘우주’를 단순히 환상적인 공간, 미지의 개척지로 바라보지 않습니다. 대신 우주에서 그릴 수 있는 삶의 방식과 다양한
+                양태, 공간적 구성을 디자인, 건축적 관점에서 상상하는 과정을 미디어프로젝션과 3D디지털 아트로 표현하였습니다.
+              </p>
+              <br />
+              <p>
+                한국의 젊은 미디어아티스트 고휘, 현지원 작가의 프로젝션맵핑&사운드 아트 작품과 투명 미디어월에서 펼쳐지는 오수환, ZEEN, BYEONKI 작가의 3D 디지털 작품에는 모두 우주에서의 일상에 대한 각기 다른 창의적인 해석이 담겨있습니다. “도심에
+                착륙한 우주선'’으로 비유 되는 DDP에서 펼쳐질 이번 <우주 백패킹>전시를 시작으로, 미래를 선도해갈 차세대 미디어 아티스트들의 작품을 DDP에서 지속적으로 만나보시기 바랍니다.
+              </p>
+              <br />
+              <p>참여작가: 고휘, 현지원, 오수환, ZEEN, BYEONKI</p>
+            </div>
+          </div>
+          <div class="cont_btm">
+            <div class="btn_wrap"><a href="../html/program.html">목록</a></div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+  </body>
+</html>
